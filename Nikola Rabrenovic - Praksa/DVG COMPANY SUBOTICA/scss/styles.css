@@ -1,0 +1,259 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  height: 143px;
+  left: 0px;
+  top: 0px;
+}
+body header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  height: 143px;
+  left: 0px;
+  top: 0px;
+}
+body header .prvi {
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 105px;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  padding-right: 105px;
+}
+body header .prvi ul li {
+  color: rgb(136, 135, 135);
+  list-style: none;
+  display: inline;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+body header .prvi ul #english, body header .prvi ul #magyar {
+  color: rgb(89, 89, 89);
+  text-decoration: underline;
+}
+body header .lista {
+  font-size: 16px;
+}
+body header .lista ul li {
+  display: inline;
+  align: center;
+}
+body .video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  height: 705px;
+  left: 0px;
+  top: 137px;
+}
+body .veleprodaja {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+body .veleprodaja #veleprodaja {
+  margin-top: 73px;
+  align-items: center;
+}
+body .veleprodaja .dvg {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 42px;
+  margin-top: 121px;
+  margin-left: 55px;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-bottom: 22px;
+}
+body .veleprodaja .dvg2 {
+  font-size: 28px;
+  font-family: "Inter";
+  margin-right: 169px;
+  margin-left: 55px;
+  margin-bottom: 37px;
+  margin-top: 27px;
+}
+body .veleprodaja .dvg3 {
+  margin-right: 151px;
+  margin-left: 55px;
+  margin-top: 54px;
+  font-size: 14px;
+  line-height: 160%;
+}
+body .veleprodaja .dugme1 {
+  margin-top: 40px;
+  margin-bottom: 67px;
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(191, 15, 15);
+  margin-left: 55px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Arial";
+  font-weight: 500;
+}
+body .veleprodaja .linija {
+  margin-left: 55px;
+}
+body .veleprodaja .linija2 {
+  margin-left: 55px;
+}
+body .slike {
+  margin-top: 74px;
+  display: flex;
+  margin-left: 104px;
+}
+body .slike div {
+  margin-left: 15px;
+}
+body .slike p {
+  font-size: 24px;
+  font-family: "Roboto";
+}
+body .slike .linija3 {
+  margin-bottom: 148px;
+}
+body .brojke h1 {
+  font-size: 42px;
+  font-style: "Roboto";
+  text-align: center;
+}
+body .brojke .company2 {
+  font-size: 28px;
+  text-align: center;
+}
+body .brojke .linija4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 93px;
+}
+body .brojke .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+body .brojke .container .first {
+  position: absolute;
+  bottom: 169px;
+  left: 163px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+}
+body .brojke .container .second {
+  position: absolute;
+  bottom: 169px;
+  left: 536px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+}
+body .brojke .container .third {
+  position: absolute;
+  bottom: 169px;
+  left: 859px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+}
+body .brojke .container .fourth {
+  position: absolute;
+  bottom: 169px;
+  left: 1149px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+}
+body .brojke .container .fifth {
+  position: absolute;
+  bottom: 129px;
+  left: 163px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+body .brojke .container .sixth {
+  position: absolute;
+  bottom: 129px;
+  left: 536px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+body .brojke .container .seventh {
+  position: absolute;
+  bottom: 129px;
+  left: 859px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+body .brojke .container .eight {
+  position: absolute;
+  bottom: 129px;
+  left: 1149px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+body .proizvodi h1 {
+  font-weight: 400;
+  font-size: 28px;
+  margin-top: 139px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+body .proizvodi p {
+  text-align: center;
+  margin-left: 457px;
+  margin-right: 457px;
+  margin-bottom: 60px;
+}
+body .proizvodi .container2 {
+  display: flex;
+  justify-content: space-around;
+}
+body .brendovi p {
+  font-size: 28px;
+  font-weight: 400px;
+  text-align: center;
+  margin-left: 467px;
+  margin-right: 467px;
+}
+body .brendovi .center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+body .brendovi .dugme2 {
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(191, 15, 15);
+  margin-left: 55px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Arial";
+  font-weight: 500;
+}/*# sourceMappingURL=styles.css.map */

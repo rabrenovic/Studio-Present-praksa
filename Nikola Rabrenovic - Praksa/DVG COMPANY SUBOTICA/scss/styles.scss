@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+        height: 143px;
+        left: 0px;
+        top: 0px;
+    header{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+        height: 143px;
+        left: 0px;
+        top: 0px;
+        .prvi{
+            background-color: rgba(217, 217, 217, 1);
+            display: flex;
+            justify-content: space-between;
+            padding-left: 105px;
+            padding-top: 17px;
+            padding-bottom: 14px;
+            padding-right: 105px;
+
+                ul{
+                    li{
+                        color: rgba(136, 135, 135, 1);
+                        list-style: none;
+                        display: inline;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: 'Roboto';
+                    }
+                    #english,#magyar{
+                        color: rgba(89, 89, 89, 1);
+                        text-decoration: underline;
+                    }
+                 }
+            
+        }
+        .lista{
+            font-size: 16px;
+           
+            ul{
+                li{
+                    display: inline;
+                    align: center;
+                    span{
+
+                    }
+                    
+                }   
+            }
+
+        }
+    }
+    .video{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1440px;
+        height: 705px;
+        left: 0px;
+        top: 137px;
+    }
+    .veleprodaja{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        #veleprodaja{
+            margin-top: 73px;
+            align-items: center;
+        }
+        .dvg{
+            margin-left: auto;
+        margin-right: auto;
+            font-size:42px;
+            margin-top: 121px;
+            margin-left: 55px;
+            font-family: 'Roboto';
+            font-style: normal;
+            margin-bottom: 22px;
+        }
+        .dvg2{
+            font-size: 28px;
+            font-family: 'Inter';
+            margin-right: 169px;
+            margin-left: 55px;
+            margin-bottom: 37px;
+            margin-top: 27px;
+
+        }
+        .dvg3{
+            margin-right: 151px;
+            margin-left: 55px;
+            margin-top: 54px;
+            font-size: 14px;
+            line-height: 160%;
+        }
+        .dugme1{
+            margin-top: 40px;
+            margin-bottom: 67px;
+            padding:15px;
+            font-size: 16px;
+            color:white;
+            background-color: rgba(191, 15, 15, 1);
+            margin-left: 55px;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Arial';
+            font-weight: 500;
+        }
+        .linija{
+            margin-left: 55px;
+        }
+        .linija2{
+            margin-left: 55px;
+        }
+    }
+    .distribucija{
+        
+    }
+    .slike{
+        margin-top: 74px;
+        display: flex;
+        margin-left: 104px;
+        div{
+            margin-left: 15px;
+        }
+        p{
+            font-size: 24px;
+            font-family: 'Roboto';
+        }
+        .linija3{
+            margin-bottom: 148px;
+        }
+    }
+    .brojke{
+        h1{
+            font-size: 42px;
+            font-style: 'Roboto';
+            text-align: center;
+        }
+        .company2{
+            font-size: 28px;
+            text-align: center;
+        }
+        .linija4{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 93px;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            .first{
+                position: absolute;
+                bottom: 169px;
+                left: 163px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+            }
+            .second{
+                position: absolute;
+                bottom: 169px;
+                left: 536px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+            }
+            .third{
+                position: absolute;
+                bottom: 169px;
+                left: 859px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+            }
+            .fourth{
+                position: absolute;
+                bottom: 169px;
+                left: 1149px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+            }
+            .fifth{
+                position: absolute;
+                bottom: 129px;
+                left: 163px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .sixth{
+                position: absolute;
+                bottom: 129px;
+                left: 536px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .seventh{
+                position: absolute;
+                bottom: 129px;
+                left: 859px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .eight{
+                position: absolute;
+                bottom: 129px;
+                left: 1149px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+            }
+          }
+    }
+    .proizvodi{
+        h1{
+            font-weight: 400;
+            font-size: 28px;
+            margin-top: 139px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            margin-left: 457px;
+            margin-right: 457px;
+            margin-bottom: 60px;
+            
+        }
+        .container2{
+            display:flex;
+            justify-content: space-around;
+        }
+    }
+    .brendovi{
+        p{
+            font-size: 28px;
+            font-weight: 400px;
+            text-align: center;
+            margin-left: 467px;
+            margin-right: 467px;
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .dugme2{
+            padding:15px;
+            font-size: 16px;
+            color:white;
+            background-color: rgba(191, 15, 15, 1);
+            margin-left: 55px;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Arial';
+            font-weight: 500;
+        }
+        
+    }
+}
