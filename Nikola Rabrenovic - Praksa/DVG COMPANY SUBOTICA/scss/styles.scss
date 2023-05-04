@@ -1,3 +1,24 @@
+@media screen and (min-width: 1025) {
+    *{
+      
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    *{
+      
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+    *{
+      
+    }
+}
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,17 +28,15 @@ body{
     margin-left: auto;
         margin-right: auto;
         width: 1440px;
-        height: 143px;
         left: 0px;
         top: 0px;
     header{
         margin-left: auto;
         margin-right: auto;
         width: 1440px;
-        height: 143px;
         left: 0px;
         top: 0px;
-        .prvi{
+        .firstDiv{
             background-color: rgba(217, 217, 217, 1);
             display: flex;
             justify-content: space-between;
@@ -42,17 +61,32 @@ body{
                  }
             
         }
-        .lista{
+        .list{
             font-size: 16px;
            
             ul{
+                display: flex;
+                justify-content: space-around;
+                font-family: 'Roboto Condensed';
+                margin-left: 105px;
+                margin-right: 104px;
                 li{
-                    display: inline;
-                    align: center;
+                    border-left: 1px solid rgba(136, 135, 135, 0.4);
+                    padding-top: 11px;
+                    display: inline-block;
+                    padding-left: 42px;
                     span{
-
+                        display: block;
+                        font-size: 12px;
+                        padding-bottom: 11px;
+                        color:rgba(71, 71, 71, 1);
+                        ;
                     }
                     
+                }
+                .last{
+                    border-right: 1px solid rgba(136, 135, 135, 0.4);
+                    padding-right: 58px;
                 }   
             }
 
@@ -67,7 +101,7 @@ body{
         left: 0px;
         top: 137px;
     }
-    .veleprodaja{
+    .sales{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -75,6 +109,7 @@ body{
         #veleprodaja{
             margin-top: 73px;
             align-items: center;
+            margin-bottom: 70px;
         }
         .dvg{
             margin-left: auto;
@@ -101,8 +136,9 @@ body{
             margin-top: 54px;
             font-size: 14px;
             line-height: 160%;
+            font-family: 'Roboto';
         }
-        .dugme1{
+        .btn1{
             margin-top: 40px;
             margin-bottom: 67px;
             padding:15px;
@@ -115,17 +151,15 @@ body{
             font-family: 'Arial';
             font-weight: 500;
         }
-        .linija{
+        .line{
             margin-left: 55px;
         }
-        .linija2{
+        .line2{
             margin-left: 55px;
         }
     }
-    .distribucija{
-        
     }
-    .slike{
+    .pictures{
         margin-top: 74px;
         display: flex;
         margin-left: 104px;
@@ -136,11 +170,11 @@ body{
             font-size: 24px;
             font-family: 'Roboto';
         }
-        .linija3{
+        .line3{
             margin-bottom: 148px;
         }
     }
-    .brojke{
+    .numbers{
         h1{
             font-size: 42px;
             font-style: 'Roboto';
@@ -149,6 +183,7 @@ body{
         .company2{
             font-size: 28px;
             text-align: center;
+            margin-bottom: 32px;
         }
         .linija4{
             display: block;
@@ -162,87 +197,90 @@ body{
             color: white;
             .first{
                 position: absolute;
-                bottom: 169px;
+                bottom: 119px;
                 left: 163px;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 900;
                 font-size: 46px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                padding-right: 94px;
+                padding-top: 52px;
+                padding-bottom: 26px;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
             .second{
                 position: absolute;
-                bottom: 169px;
+                bottom: 119px;
                 left: 536px;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 900;
                 font-size: 46px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                padding-right: 131px;
+                padding-top: 52px;
+                padding-bottom: 26px;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
             .third{
                 position: absolute;
-                bottom: 169px;
+                bottom: 119px;
                 left: 859px;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 900;
                 font-size: 46px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                padding-right: 103px;
+                padding-top: 52px;
+                padding-bottom: 26px;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
             .fourth{
                 position: absolute;
-                bottom: 169px;
+                bottom: 119px;
                 left: 1149px;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 900;
                 font-size: 46px;
-            }
-            .fifth{
-                position: absolute;
-                bottom: 129px;
-                left: 163px;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-            }
-            .sixth{
-                position: absolute;
-                bottom: 129px;
-                left: 536px;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-            }
-            .seventh{
-                position: absolute;
-                bottom: 129px;
-                left: 859px;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-            }
-            .eight{
-                position: absolute;
-                bottom: 129px;
-                left: 1149px;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
+                padding-bottom: 26px;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
           }
     }
     .proizvodi{
+        background: #F4F4F4;
+        padding-top: 92px;
         h1{
             font-weight: 400;
             font-size: 28px;
-            margin-top: 139px;
             margin-bottom: 60px;
             text-align: center;
+            font-family: 'Inter';
+            border-bottom: 3px solid rgba(196, 196, 196, 0.4);
+            margin-left: 457px;
+            margin-right: 459px;
+            padding-bottom: 60px;
         }
-        p{
+        #paragraph{
             text-align: center;
             margin-left: 457px;
             margin-right: 457px;
@@ -250,24 +288,33 @@ body{
             
         }
         .container2{
-            display:flex;
-            justify-content: space-around;
+               margin: auto;
+               .center2{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+               }
+            }
         }
-    }
-    .brendovi{
+    
+    .brands{
         p{
             font-size: 28px;
             font-weight: 400px;
             text-align: center;
             margin-left: 467px;
             margin-right: 467px;
+            border-bottom: 3px solid rgba(196, 196, 196, 0.4);
+            padding-bottom: 44px;
+            padding-top: 83px;
         }
         .center{
             margin-left: auto;
             margin-right: auto;
             display: block;
+            padding-top: 37px;
         }
-        .dugme2{
+        .btn2{
             padding:15px;
             font-size: 16px;
             color:white;
@@ -277,7 +324,100 @@ body{
             border-radius: 4px;
             font-family: 'Arial';
             font-weight: 500;
+            margin-left: 590px;
+            margin-top: 75px;
+            margin-bottom: 75px;
         }
         
     }
-}
+    .end{
+      background-image: url(../img/pozadina_footer.png);
+        .end-child{
+            display: flex;
+            .logoDonji{
+                margin-top: 86px;
+                margin-left: 218px;
+                border-right: 1px solid rgba(255, 255, 255, 0.26);
+                padding-right: 70px;
+            }
+            .company{
+                font-size: 28px;
+                color:rgba(255, 255, 255, 1);
+                margin-top: 86px;
+                margin-left: 47px;
+                padding-right: 173px;
+                border-right: 1px solid rgba(255, 255, 255, 0.26);
+                #put{
+                    font-size: 14px;
+                }
+            }
+            .list2{
+                margin-top: 82px;
+                padding-left: 19px;
+                line-height: 26px;
+                border-right: 1px solid rgba(255, 255, 255, 0.26);
+                padding-right: 139px;
+                ul{
+                    li{
+                        list-style: none;
+                        color:rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+            .contact{
+                color:rgba(255, 255, 255, 1);
+                padding-top: 82px;
+                padding-left: 22px;
+                #fb{
+                    padding-top: 18.5px;
+                    padding-right:20px;
+                }
+                #tw{
+                    padding-right: 17px;
+                }
+                #yt{
+                    padding-right: 18px;
+                }
+            }
+        }
+        .end-child2{
+            margin-top: 33px;
+            color:rgba(255, 255, 255, 0.3);
+            padding-top: 25px;
+            padding-left: 65px;
+            display: flex;
+            padding-bottom: 24px;
+            #private{
+                padding-left: 163px;
+                color: rgba(255, 255, 255, 0.5);
+
+            }
+            #conditions{
+                padding-left: 67px;
+                color: rgba(255, 255, 255, 0.5);
+
+            }
+            #powered{
+                padding-left: 152px;
+                span{
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+        #overlay {
+            width: 95.5%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.33);
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+          }
+    }   
+
+
+
+
+
