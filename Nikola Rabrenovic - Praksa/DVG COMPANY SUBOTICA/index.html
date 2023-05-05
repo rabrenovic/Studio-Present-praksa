@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DVG COMPANY</title>
     <link rel="stylesheet" href="./scss/styles.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <header>
@@ -22,28 +23,32 @@
             </div>
         </div>
         <div class="list">
-            <ul>
-            <li>O NAMA
+            <ul class="list-child">
+            <li class="listItem">O NAMA
             <span>vizija za uspeh</span>
             </li>
-            <li>DVG PROIZVODI
+            <li class="listItem">DVG PROIZVODI
                 <span>nasi proizvodi</span>
             </li>
-            <li>BRENDOVI
+            <li class="listItem">BRENDOVI
                 <span>koje zastupamo</span>
             </li>
-            <li>DISTRIBUCIJA
+            <li class="listItem">DISTRIBUCIJA
                 <span>logistika i operativa</span>
             </li>
-            <li>SARADNJA
+            <li class="listItem">SARADNJA
                 <span>prosirenje ponude</span>
             </li>
-            <li>NOVOSTI
+            <li class="listItem">NOVOSTI
                 <span>aktuelnosti</span>
             </li>
-            <li class="last">KONTAKT
+            <li class="listItem" class="last">KONTAKT
                 <span>kontaktirajte nas</span>
             </li>
+            <button class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
             </ul>
         </div>
     </header>
@@ -100,7 +105,7 @@
     <section class="numbers">
         <h1 class="company">DVG company</h1>
         <p class="company2"> u brojkama</p>
-        <img class="linija4" src="./img/linija4.png" alt="">
+        <img class="line4" src="./img/linija4.png" alt="">
 
         <div class="container">
 
@@ -120,13 +125,31 @@
 
         </div>
     </section>
-    <section class="proizvodi">
+    <section class="products">
         <h1>Naši proizvodi</h1>
         <p id="paragraph">Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela. Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i naši kupci.</p>
 
      <div class="container2">
-        <img src="./img/proizvodi.png" class="center2" alt="">
+        <div class="center2">
+        <img src="./img/kese.png" alt="">
+        <img src="./img/za_kuhinju.png" alt="">
+        <img src="./img/ubrusi.png" alt="">
+        <img src="./img/kozmetika.png" alt="">
+        <img src="./img/plasticne_kante.png" alt="">
+        <p class="kese">KESE I FOLIJE</p>
+        <img class="linija5" src="./img/linija5.png" alt="">
+        <p class="kuhinja">ZA KUHINJU</p>
+        <img class="linija6" src="./img/linija5.png" alt="">
+        <p class="ubrusi">UBRUSI I <br> TOALET PAPIRI</p>
+        <img class="linija7" src="./img/linija5.png" alt="">
+        <p class="kozmetika">KOZMETIKA</p>
+        <img class="linija8" src="./img/linija5.png" alt="">
+        <p class="kante">PLASTIČNE KANTE</p>
+        <img class="linija9" src="./img/linija5.png" alt="">
+        <button class="left"><img src="./img/arrow-left.png" alt=""></button>
+    <button class="right"><img src="./img/arrow-right.png" alt=""></button>
         </div>  
+    </div>
     
     <img src="./img/logo2.png" alt="">
     </section>
@@ -140,7 +163,7 @@
     </section>
     <footer class="end">
         <div class="end-child">
-            <div class="logoDonji"><img src="./img/logoDonji.png" alt=""></div>
+            <div class="logoLast"><img src="./img/logoDonji.png" alt=""></div>
             <div class="company"> 
                 <p>D.V.G. COMPANY</p>
                 <p id="put"> <img src="./img/pin.png" alt=""> Čantavirski put bb <br>
