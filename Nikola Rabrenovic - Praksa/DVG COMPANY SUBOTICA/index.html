@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DVG COMPANY</title>
     <link rel="stylesheet" href="./scss/styles.css">
-    <script src="./script.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -129,25 +131,39 @@
         <h1>Naši proizvodi</h1>
         <p id="paragraph">Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela. Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i naši kupci.</p>
 
-     <div class="container2">
-        <div class="center2">
-        <img src="./img/kese.png" alt="">
-        <img src="./img/za_kuhinju.png" alt="">
-        <img src="./img/ubrusi.png" alt="">
-        <img src="./img/kozmetika.png" alt="">
-        <img src="./img/plasticne_kante.png" alt="">
+     <div class="swiper container2">
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide"><img src="./img/kese.png" alt="">
         <p class="kese">KESE I FOLIJE</p>
-        <img class="linija5" src="./img/linija5.png" alt="">
+        <img class="linija5" src="./img/linija5.png" alt=""></div>
+
+        <div class="swiper-slide"><img src="./img/za_kuhinju.png" alt="">
         <p class="kuhinja">ZA KUHINJU</p>
-        <img class="linija6" src="./img/linija5.png" alt="">
+        <img class="linija6" src="./img/linija5.png" alt=""></div>
+
+        <div class="swiper-slide"><img src="./img/ubrusi.png" alt="">
         <p class="ubrusi">UBRUSI I <br> TOALET PAPIRI</p>
-        <img class="linija7" src="./img/linija5.png" alt="">
+        <img class="linija7" src="./img/linija5.png" alt=""></div>
+
+        <div class="swiper-slide"><img src="./img/kozmetika.png" alt="">
         <p class="kozmetika">KOZMETIKA</p>
-        <img class="linija8" src="./img/linija5.png" alt="">
+        <img class="linija8" src="./img/linija5.png" alt=""></div>
+
+        <div class="swiper-slide"><img src="./img/plasticne_kante.png" alt="">
         <p class="kante">PLASTIČNE KANTE</p>
-        <img class="linija9" src="./img/linija5.png" alt="">
-        <button class="left"><img src="./img/arrow-left.png" alt=""></button>
-    <button class="right"><img src="./img/arrow-right.png" alt=""></button>
+        <img class="linija9" src="./img/linija5.png" alt=""></div>
+
+        <div class="swiper-slide"><img src="./img/dog.jpg" alt="">
+            <p class="kante">DOG</p>
+            <img class="linija9" src="./img/linija5.png" alt=""></div>
+
+        <div class="swiper-slide"><img src="./img/cat.png" alt="">
+            <p class="kante">CAT</p>
+            <img class="linija9" src="./img/linija5.png" alt=""></div>   
+
+        <button class="swiper-button-prev"><img src="./img/arrow-left.png" alt=""></button>
+    <button class="swiper-button-next"><img src="./img/arrow-right.png" alt=""></button>
         </div>  
     </div>
     
@@ -201,6 +217,11 @@
             <p id="conditions"><u>Uslovi korišćenja</u></p>
             <p id="powered">Powered by: <span><u>StudioPresent</u></span></p>
         </div>
+        <script src="./script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        
     </footer>
-
+</body>
         

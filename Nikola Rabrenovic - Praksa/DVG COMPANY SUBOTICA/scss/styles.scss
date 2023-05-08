@@ -269,15 +269,17 @@ body{
             margin-bottom: $value*8;
             
         }
-        .container2{
-            .center2{
-            position: relative;
-            display: flex;      
+        .swiper{
+            width: 600px;
+            height: 300px;
+            .swiper-wrapper{
+            flex-direction: row;
+            position: relative;    
             justify-content: space-around;
             margin-left: $value*14;
             margin-right: $value*14;
-            img{
-        
+            .swiper-slide{
+            
             }
             .kese{
                 position:absolute;
@@ -334,14 +336,14 @@ body{
                 left:1025px;
                 bottom:22px;
             }
-            .left{
+            .swiper-button-prev{
                 position:absolute;
                 left:-90px;
                 bottom: 130px;
                 border:none;
                 background-color: transparent;
             }
-            .right{
+            .swiper-button-next{
                 position:absolute;
                 left:1248px;
                 bottom:130px;

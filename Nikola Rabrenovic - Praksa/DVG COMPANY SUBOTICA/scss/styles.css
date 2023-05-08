@@ -261,76 +261,81 @@ body .sales .line2 {
   margin-right: 456px;
   margin-bottom: 64px;
 }
-.products .container2 .center2 {
-  position: relative;
+.products .swiper {
+  width: 600px;
+  height: 300px;
+}
+.products .swiper .swiper-wrapper {
   display: flex;
+  flex-direction: row;
+  position: relative;
   justify-content: space-around;
   margin-left: 112px;
   margin-right: 112px;
 }
-.products .container2 .center2 .kese {
+.products .swiper .swiper-wrapper .kese {
   position: absolute;
   font-size: 24px;
   left: 45px;
   bottom: 50px;
 }
-.products .container2 .center2 .kuhinja {
+.products .swiper .swiper-wrapper .kuhinja {
   position: absolute;
   font-size: 24px;
   left: 295px;
   bottom: 50px;
 }
-.products .container2 .center2 .ubrusi {
+.products .swiper .swiper-wrapper .ubrusi {
   position: absolute;
   font-size: 24px;
   left: 525px;
   bottom: 22px;
 }
-.products .container2 .center2 .kozmetika {
+.products .swiper .swiper-wrapper .kozmetika {
   position: absolute;
   font-size: 24px;
   left: 775px;
   bottom: 50px;
 }
-.products .container2 .center2 .kante {
+.products .swiper .swiper-wrapper .kante {
   position: absolute;
   font-size: 24px;
   left: 1025px;
   bottom: 22px;
 }
-.products .container2 .center2 .linija5 {
+.products .swiper .swiper-wrapper .linija5 {
   position: absolute;
   left: 45px;
   bottom: 50px;
 }
-.products .container2 .center2 .linija6 {
+.products .swiper .swiper-wrapper .linija6 {
   position: absolute;
   left: 295px;
   bottom: 50px;
 }
-.products .container2 .center2 .linija7 {
+.products .swiper .swiper-wrapper .linija7 {
   position: absolute;
   left: 525px;
   bottom: 22px;
 }
-.products .container2 .center2 .linija8 {
+.products .swiper .swiper-wrapper .linija8 {
   position: absolute;
   left: 775px;
   bottom: 50px;
 }
-.products .container2 .center2 .linija9 {
+.products .swiper .swiper-wrapper .linija9 {
   position: absolute;
   left: 1025px;
   bottom: 22px;
 }
-.products .container2 .center2 .left {
+.products .swiper .swiper-wrapper .swiper-button-prev {
   position: absolute;
   left: -90px;
   bottom: 130px;
   border: none;
   background-color: transparent;
 }
-.products .container2 .center2 .right {
+.products .swiper .swiper-wrapper .swiper-button-next {
   position: absolute;
   left: 1248px;
   bottom: 130px;
