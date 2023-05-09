@@ -3,6 +3,21 @@
   padding: 0px;
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin-left: auto;
   margin-right: auto;
@@ -262,85 +277,95 @@ body .sales .line2 {
   margin-bottom: 64px;
 }
 .products .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 }
-.products .swiper .swiper-wrapper {
+.products .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.products .swiper-slide .kese {
+  position: absolute;
+  font-size: 24px;
+  left: 45px;
+  bottom: 50px;
+}
+.products .swiper-slide .kuhinja {
+  position: absolute;
+  font-size: 24px;
+  bottom: 50px;
+}
+.products .swiper-slide .ubrusi {
+  position: absolute;
+  font-size: 24px;
+  left: 100px;
+  bottom: 50px;
+}
+.products .swiper-slide .kozmetika {
+  position: absolute;
+  font-size: 24px;
+  bottom: 50px;
+}
+.products .swiper-slide .kante {
+  position: absolute;
+  font-size: 24px;
+  bottom: 50px;
+}
+.products .swiper-slide .maca {
+  position: absolute;
+  font-size: 24px;
+  bottom: 50px;
+}
+.products .swiper-slide .kuca {
+  position: absolute;
+  font-size: 24px;
+  bottom: 50px;
+}
+.products .swiper-slide .linija5 {
   position: relative;
-  justify-content: space-around;
-  margin-left: 112px;
-  margin-right: 112px;
+  left: -177px;
+  bottom: -115px;
 }
-.products .swiper .swiper-wrapper .kese {
-  position: absolute;
-  font-size: 24px;
-  left: 45px;
-  bottom: 50px;
+.products .swiper-slide .linija6 {
+  position: relative;
+  left: -145px;
+  bottom: -115px;
 }
-.products .swiper .swiper-wrapper .kuhinja {
-  position: absolute;
-  font-size: 24px;
-  left: 295px;
-  bottom: 50px;
+.products .swiper-slide .linija7 {
+  position: relative;
+  left: -120px;
+  bottom: -115px;
 }
-.products .swiper .swiper-wrapper .ubrusi {
-  position: absolute;
-  font-size: 24px;
-  left: 525px;
-  bottom: 22px;
+.products .swiper-slide .linija8 {
+  position: relative;
+  left: -145px;
+  bottom: -115px;
 }
-.products .swiper .swiper-wrapper .kozmetika {
-  position: absolute;
-  font-size: 24px;
-  left: 775px;
-  bottom: 50px;
+.products .swiper-slide .linija9 {
+  position: relative;
+  left: -170px;
+  bottom: -115px;
 }
-.products .swiper .swiper-wrapper .kante {
-  position: absolute;
-  font-size: 24px;
-  left: 1025px;
-  bottom: 22px;
+.products .swiper-slide .linija10 {
+  position: relative;
+  left: -120px;
+  bottom: -115px;
 }
-.products .swiper .swiper-wrapper .linija5 {
-  position: absolute;
-  left: 45px;
-  bottom: 50px;
+.products .swiper-slide .linija11 {
+  position: relative;
+  left: -120px;
+  bottom: -115px;
 }
-.products .swiper .swiper-wrapper .linija6 {
-  position: absolute;
-  left: 295px;
-  bottom: 50px;
-}
-.products .swiper .swiper-wrapper .linija7 {
-  position: absolute;
-  left: 525px;
-  bottom: 22px;
-}
-.products .swiper .swiper-wrapper .linija8 {
-  position: absolute;
-  left: 775px;
-  bottom: 50px;
-}
-.products .swiper .swiper-wrapper .linija9 {
-  position: absolute;
-  left: 1025px;
-  bottom: 22px;
-}
-.products .swiper .swiper-wrapper .swiper-button-prev {
-  position: absolute;
-  left: -90px;
-  bottom: 130px;
-  border: none;
-  background-color: transparent;
-}
-.products .swiper .swiper-wrapper .swiper-button-next {
-  position: absolute;
-  left: 1248px;
-  bottom: 130px;
-  border: none;
-  background-color: transparent;
+.products .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .brands p {

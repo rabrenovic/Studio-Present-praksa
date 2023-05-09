@@ -8,7 +8,20 @@
     margin: 0px;
     padding: 0px;
 }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
 body{
     margin-left: auto;
         margin-right: auto;
@@ -269,18 +282,18 @@ body{
             margin-bottom: $value*8;
             
         }
-        .swiper{
-            width: 600px;
-            height: 300px;
-            .swiper-wrapper{
-            flex-direction: row;
-            position: relative;    
-            justify-content: space-around;
-            margin-left: $value*14;
-            margin-right: $value*14;
-            .swiper-slide{
-            
-            }
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .kese{
                 position:absolute;
                 font-size: $value*3;
@@ -290,70 +303,79 @@ body{
             .kuhinja{
                 position:absolute;
                 font-size: $value*3;
-                left:295px;
                 bottom:50px;
             }
             .ubrusi{
                 position:absolute;
                 font-size: $value*3;
-                left:525px;
-                bottom:22px;
+                left:100px;
+                bottom:50px;
             }
             .kozmetika{
                 position:absolute;
                 font-size: $value*3;
-                left:775px;
                 bottom:50px;
             }
             .kante{
                 position:absolute;
                 font-size: $value*3;
-                left:1025px;
-                bottom:22px;
+                bottom:50px;
+            }
+            .maca{
+                position:absolute;
+                font-size: $value*3;
+                bottom:50px;
+            }
+            .kuca{
+                position:absolute;
+                font-size: $value*3;
+                bottom:50px;
             }
             .linija5{
-                position:absolute;
-                left:45px;
-                bottom: 50px;
+                position: relative;
+                left:-177px;
+                bottom: -115px;
             }
             .linija6{
-                position:absolute;
-                left:295px;
-                bottom:50px;
+                position:relative;
+                left:-145px;
+                bottom: -115px;
             }
             .linija7{
-                position:absolute;
-                left:525px;
-                bottom:22px;
+                position: relative;
+                left:-120px;
+                bottom: -115px;
             }
             .linija8{
-                position:absolute;
-                left:775px;
-                bottom:50px;
+                position:relative;
+                left:-145px;
+                bottom:-115px;
             }
             .linija9{
-                position:absolute;
-                left:1025px;
-                bottom:22px;
+                position:relative;
+                left:-170px;
+                bottom:-115px;
             }
-            .swiper-button-prev{
-                position:absolute;
-                left:-90px;
-                bottom: 130px;
-                border:none;
-                background-color: transparent;
+            .linija10{
+                position:relative;
+                left:-120px;
+                bottom:-115px;
             }
-            .swiper-button-next{
-                position:absolute;
-                left:1248px;
-                bottom:130px;
-                border:none;
-                background-color: transparent;
+            .linija11{
+                position:relative;
+                left:-120px;
+                bottom:-115px;
             }
-              }
-            }
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit:fill;
+          }
+        
         }
-    
     .brands{
         p{
             font-size: 28px;
