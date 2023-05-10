@@ -3,6 +3,16 @@
   padding: 0px;
 }
 
+:root {
+  --primary-color: rgba(217, 217, 217, 1);
+  --secondary-color:#212121;
+}
+
+.dark-theme {
+  --primary-color:#000106;
+  --secondary-color:rgba(217, 217, 217, 1);
+}
+
 html,
 body {
   position: relative;
@@ -10,10 +20,10 @@ body {
 }
 
 body {
-  background: #eee;
+  background: var(--primary-color);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #000;
+  color: --;
   margin: 0;
   padding: 0;
 }
@@ -31,6 +41,48 @@ body header {
   width: 1440px;
   left: 0px;
   top: 0px;
+}
+body header #modalbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 450px;
+  text-align: center;
+  padding: 80px 60px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: burlywood;
+  border-radius: 8px;
+  display: none;
+  z-index: 1;
+}
+body header #modalbox .close-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+body header #modalbox button {
+  background: brown;
+  color: wheat;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+body header #modalbox .cookie {
+  width: 100px;
+  margin-bottom: 15px;
 }
 body header .firstDiv {
   background-color: rgb(217, 217, 217);
@@ -53,6 +105,10 @@ body header .firstDiv ul #english, body header .firstDiv ul #magyar {
   color: rgb(89, 89, 89);
   text-decoration: underline;
 }
+body header .firstDiv ul #icon {
+  width: 30px;
+  cursor: pointer;
+}
 body header .list {
   font-size: 16px;
 }
@@ -64,7 +120,8 @@ body header .list ul {
   margin-right: 104px;
 }
 body header .list ul li {
-  border-left: 1px solid rgba(136, 135, 135, 0.4);
+  color: var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
   padding-top: 8px;
   display: inline-block;
   padding-left: 40px;
@@ -73,7 +130,7 @@ body header .list ul li span {
   display: block;
   font-size: 12px;
   padding-bottom: 8px;
-  color: rgb(71, 71, 71);
+  color: var(--secondary-color);
 }
 body header .list ul .last {
   border-right: 1px solid rgba(136, 135, 135, 0.4);
@@ -103,6 +160,7 @@ body .sales #veleprodaja {
   margin-bottom: 72px;
 }
 body .sales .dvg {
+  color: var(--secondary-color);
   margin-left: auto;
   margin-right: auto;
   font-size: 40px;
@@ -113,6 +171,7 @@ body .sales .dvg {
   margin-bottom: 24px;
 }
 body .sales .dvg2 {
+  color: var(--secondary-color);
   font-size: 32px;
   font-family: "Inter";
   margin-right: 168px;
@@ -121,6 +180,7 @@ body .sales .dvg2 {
   margin-top: 24px;
 }
 body .sales .dvg3 {
+  color: var(--secondary-color);
   margin-right: 152px;
   margin-left: 56px;
   margin-top: 56px;
@@ -157,6 +217,7 @@ body .sales .line2 {
   margin-left: 16px;
 }
 .pictures p {
+  color: var(--secondary-color);
   font-size: 24px;
   font-family: "Roboto", sans-serif;
 }
@@ -165,11 +226,13 @@ body .sales .line2 {
 }
 
 .numbers h1 {
+  color: var(--secondary-color);
   font-size: 42px;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
 .numbers .company2 {
+  color: var(--secondary-color);
   font-size: 28px;
   text-align: center;
   margin-bottom: 32px;
@@ -369,6 +432,7 @@ body .sales .line2 {
 }
 
 .brands p {
+  color: var(--secondary-color);
   font-size: 28px;
   font-weight: 400px;
   text-align: center;
@@ -481,17 +545,23 @@ body .sales .line2 {
   cursor: pointer; /* Add a pointer on hover */
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .hamburger {
-    display: flex;
+    display: none;
+  }
+  #lista2 {
+    display: none !important;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .hamburger {
     display: flex !important;
   }
   .listItem {
     display: none !important;
+  }
+  #lista2 {
+    display: none;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -501,6 +571,9 @@ body .sales .line2 {
   .listItem {
     display: none !important;
   }
+  #lista2 {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .hamburger {
@@ -508,5 +581,8 @@ body .sales .line2 {
   }
   .listItem {
     display: none !important;
+  }
+  #lista2 {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
