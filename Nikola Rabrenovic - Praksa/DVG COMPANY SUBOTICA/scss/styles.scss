@@ -22,6 +22,7 @@ html,
 body {
   position: relative;
   height: 100%;
+  
 }
 
 body {
@@ -92,6 +93,12 @@ body{
             padding-top: $value*2;
             padding-bottom: $value*2;
             padding-right: $value*13;
+            .dvglogo{
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
 
                 ul{
                     li{
@@ -152,10 +159,14 @@ body{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 1440px;
-        height: 705px;
         left: 0px;
         top: $value*17;
+        div{
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
     }
     .sales{
         display: block;
@@ -166,6 +177,8 @@ body{
             margin-top: $value*9;
             align-items: center;
             margin-bottom: $value*9;
+            max-width: 100%;
+            max-height: 100%;
         }
         .dvg{
             color: var(--secondary-color);
@@ -196,6 +209,8 @@ body{
             font-size: 14px;
             line-height: 160%;
             font-family:'Roboto', sans-serif;
+            
+            
         }
         .btn1{
             @include button;
@@ -212,9 +227,17 @@ body{
         }
     }
     }
+    .distribution{
+        div{
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
     .pictures{
-        margin-top: $value*9;
         display: flex;
+        margin-top: $value*9;
         margin-left: $value*13;
         div{
             margin-left: $value*2;
@@ -226,6 +249,9 @@ body{
         }
         .line3{
             margin-bottom: $value*19;
+        }
+        .pics{
+        display: flex;
         }
     }
     .numbers{
@@ -251,6 +277,9 @@ body{
             position: relative;
             text-align: center;
             color: white;
+            img{
+                max-width: 100%;
+            }
             .first{
                 position: absolute;
                 bottom: $value*15;
@@ -454,6 +483,8 @@ body{
             margin-right: auto;
             display: block;
             padding-top: $value*5;
+            max-width: 100%;
+            max-height: 100%;
         }
         .btn2{
             @include button;
@@ -466,6 +497,9 @@ body{
     }
     .end{
       background-image: url(../img/pozadina_footer.png);
+      background-size: cover;
+      max-width: 100%;
+      max-height: 100%;
         .end-child{
             display: flex;
             .logoLast{
@@ -553,6 +587,9 @@ body{
 
 
     @media screen and (min-width: 1024px) {
+        body{
+            width: 1440px;
+        }
         .hamburger{
             display: none;
         }
@@ -562,6 +599,9 @@ body{
     }
     
     @media screen and (min-width: 769px) and (max-width:1023px) {
+        body{
+            width: 1024px;
+        }
         .hamburger{
             display: flex !important;
         }
@@ -574,6 +614,26 @@ body{
     }
     
     @media screen and (min-width: 481px) and (max-width:768px) {
+        body{
+            width: 768px;
+        }
+        .dvgs{
+            max-width: 100%;
+        }
+        .dvg{
+            margin-left: 0px !important;
+        }
+        .dvg2{
+            margin-left: 0px !important;
+            font-size: $value*3 !important;
+            margin-right: 0px !important;
+        }
+        .dvg3{
+            font-size: 8px !important;
+            margin-left: 0px !important;
+            max-width: 100% !important;
+            margin:0px !important;
+        }
         .hamburger{
             display: flex !important;
         }
@@ -582,10 +642,96 @@ body{
         }
         #lista2{
             display: none;
+        }
+        .logo2{
+            width: 100px;
+        }
+        .end{
+            background-size: cover;
+        }
+        .pictures{
+            margin-left:0px !important;
+        }
+        .pics{
+            display: flex;
+            flex-direction: column;
+            div{
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+        .first,.second,.third,.fourth {
+            font-size: 16px !important;
+            bottom: 50px !important;
+
+            span{
+                font-size: 16px !important;
+            }
+        }
+        .first{
+            left:75px !important;
+        }
+        .second{
+            left:300px !important;
+        }
+        .third{
+            left:450px !important;
+        }
+        .fourth{
+            left:650px !important;
+        }
+        .products{
+            padding-top: 0px !important;
+            h1{
+                margin-left: 350px !important;
+            }
+            #paragraph{
+                margin-left: 350px !important;
+            }
+        }
+        .logoLast{
+            margin-left: 0px !important;
+        }
+        .end-child{
+            flex-direction: column;
+        }
+        .end-child2{
+            flex-direction: column;
+        }
+        .brands{
+            p{
+                font-size: 14px !important;
+                margin-left: 350px !important;
+            }
+            .btn2{
+                margin-left: 270px !important;
+            }
         }
     }
     
     @media screen and (max-width:480px) {
+        body{
+            width: 320px !important;
+        }
+        .dvgs{
+            max-width: 100%;
+        }
+        .dvg{
+            margin-left: 0px !important;
+        }
+        .dvg2{
+            margin-left: 0px !important;
+            font-size: $value*3 !important;
+            margin-right: 0px !important;
+        }
+        .dvg3{
+            font-size: 8px !important;
+            margin-left: 0px !important;
+            max-width: 100% !important;
+            margin:0px !important;
+        }
         .hamburger{
             display: flex !important;
         }
@@ -594,6 +740,71 @@ body{
         }
         #lista2{
             display: none;
+        }
+        .logo2{
+            width: 100px;
+        }
+        .end{
+            background-size: cover;
+        }
+        .pictures{
+            margin-left:0px !important;
+        }
+        .pics{
+            display: flex;
+            flex-direction: column;
+            div{
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+        .first,.second,.third,.fourth {
+            font-size: 8px !important;
+            bottom: 0px !important;
+            span{
+                font-size: 8px !important;
+            }
+        }
+        .first{
+            left:0px !important;
+        }
+        .second{
+            left:100px !important;
+        }
+        .third{
+            left:150px !important;
+        }
+        .fourth{
+            left:235px !important;
+        }
+        .products{
+            padding-top: 0px !important;
+            h1{
+                margin-left: 0px !important;
+            }
+            #paragraph{
+                margin-left: 0px !important;
+            }
+        }
+        .logoLast{
+            margin-left: 0px !important;
+        }
+        .end-child{
+            flex-direction: column;
+        }
+        .end-child2{
+            flex-direction: column;
+        }
+        .brands{
+            p{
+                font-size: 14px !important;
+                margin-left: 0px !important;
+            }
+            .btn2{
+                margin-left: 0px !important;
+            }
         }
     }
 

@@ -31,14 +31,12 @@ body {
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
   left: 0px;
   top: 0px;
 }
 body header {
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
   left: 0px;
   top: 0px;
 }
@@ -93,6 +91,10 @@ body header .firstDiv {
   padding-bottom: 16px;
   padding-right: 104px;
 }
+body header .firstDiv .dvglogo img {
+  max-width: 100%;
+  max-height: 100%;
+}
 body header .firstDiv ul li {
   color: rgb(136, 135, 135);
   list-style: none;
@@ -143,10 +145,12 @@ body .video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
-  height: 705px;
   left: 0px;
   top: 136px;
+}
+body .video div img {
+  max-width: 100%;
+  max-height: 100%;
 }
 body .sales {
   display: block;
@@ -158,6 +162,8 @@ body .sales #veleprodaja {
   margin-top: 72px;
   align-items: center;
   margin-bottom: 72px;
+  max-width: 100%;
+  max-height: 100%;
 }
 body .sales .dvg {
   color: var(--secondary-color);
@@ -208,9 +214,14 @@ body .sales .line2 {
   margin-left: 56px;
 }
 
+.distribution div img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .pictures {
-  margin-top: 72px;
   display: flex;
+  margin-top: 72px;
   margin-left: 104px;
 }
 .pictures div {
@@ -223,6 +234,9 @@ body .sales .line2 {
 }
 .pictures .line3 {
   margin-bottom: 152px;
+}
+.pictures .pics {
+  display: flex;
 }
 
 .numbers h1 {
@@ -247,6 +261,9 @@ body .sales .line2 {
   position: relative;
   text-align: center;
   color: white;
+}
+.numbers .container img {
+  max-width: 100%;
 }
 .numbers .container .first {
   position: absolute;
@@ -447,6 +464,8 @@ body .sales .line2 {
   margin-right: auto;
   display: block;
   padding-top: 40px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .brands .btn2 {
   font-size: 16px;
@@ -464,6 +483,9 @@ body .sales .line2 {
 
 .end {
   background-image: url(../img/pozadina_footer.png);
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 .end .end-child {
   display: flex;
@@ -546,6 +568,9 @@ body .sales .line2 {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    width: 1440px;
+  }
   .hamburger {
     display: none;
   }
@@ -554,6 +579,9 @@ body .sales .line2 {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  body {
+    width: 1024px;
+  }
   .hamburger {
     display: flex !important;
   }
@@ -565,6 +593,26 @@ body .sales .line2 {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+  .dvgs {
+    max-width: 100%;
+  }
+  .dvg {
+    margin-left: 0px !important;
+  }
+  .dvg2 {
+    margin-left: 0px !important;
+    font-size: 24px !important;
+    margin-right: 0px !important;
+  }
+  .dvg3 {
+    font-size: 8px !important;
+    margin-left: 0px !important;
+    max-width: 100% !important;
+    margin: 0px !important;
+  }
   .hamburger {
     display: flex !important;
   }
@@ -573,9 +621,90 @@ body .sales .line2 {
   }
   #lista2 {
     display: none;
+  }
+  .logo2 {
+    width: 100px;
+  }
+  .end {
+    background-size: cover;
+  }
+  .pictures {
+    margin-left: 0px !important;
+  }
+  .pics {
+    display: flex;
+    flex-direction: column;
+  }
+  .pics div img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .first, .second, .third, .fourth {
+    font-size: 16px !important;
+    bottom: 50px !important;
+  }
+  .first span, .second span, .third span, .fourth span {
+    font-size: 16px !important;
+  }
+  .first {
+    left: 75px !important;
+  }
+  .second {
+    left: 300px !important;
+  }
+  .third {
+    left: 450px !important;
+  }
+  .fourth {
+    left: 650px !important;
+  }
+  .products {
+    padding-top: 0px !important;
+  }
+  .products h1 {
+    margin-left: 350px !important;
+  }
+  .products #paragraph {
+    margin-left: 350px !important;
+  }
+  .logoLast {
+    margin-left: 0px !important;
+  }
+  .end-child {
+    flex-direction: column;
+  }
+  .end-child2 {
+    flex-direction: column;
+  }
+  .brands p {
+    font-size: 14px !important;
+    margin-left: 350px !important;
+  }
+  .brands .btn2 {
+    margin-left: 270px !important;
   }
 }
 @media screen and (max-width: 480px) {
+  body {
+    width: 320px !important;
+  }
+  .dvgs {
+    max-width: 100%;
+  }
+  .dvg {
+    margin-left: 0px !important;
+  }
+  .dvg2 {
+    margin-left: 0px !important;
+    font-size: 24px !important;
+    margin-right: 0px !important;
+  }
+  .dvg3 {
+    font-size: 8px !important;
+    margin-left: 0px !important;
+    max-width: 100% !important;
+    margin: 0px !important;
+  }
   .hamburger {
     display: flex !important;
   }
@@ -584,5 +713,66 @@ body .sales .line2 {
   }
   #lista2 {
     display: none;
+  }
+  .logo2 {
+    width: 100px;
+  }
+  .end {
+    background-size: cover;
+  }
+  .pictures {
+    margin-left: 0px !important;
+  }
+  .pics {
+    display: flex;
+    flex-direction: column;
+  }
+  .pics div img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .first, .second, .third, .fourth {
+    font-size: 8px !important;
+    bottom: 0px !important;
+  }
+  .first span, .second span, .third span, .fourth span {
+    font-size: 8px !important;
+  }
+  .first {
+    left: 0px !important;
+  }
+  .second {
+    left: 100px !important;
+  }
+  .third {
+    left: 150px !important;
+  }
+  .fourth {
+    left: 235px !important;
+  }
+  .products {
+    padding-top: 0px !important;
+  }
+  .products h1 {
+    margin-left: 0px !important;
+  }
+  .products #paragraph {
+    margin-left: 0px !important;
+  }
+  .logoLast {
+    margin-left: 0px !important;
+  }
+  .end-child {
+    flex-direction: column;
+  }
+  .end-child2 {
+    flex-direction: column;
+  }
+  .brands p {
+    font-size: 14px !important;
+    margin-left: 0px !important;
+  }
+  .brands .btn2 {
+    margin-left: 0px !important;
   }
 }/*# sourceMappingURL=styles.css.map */
