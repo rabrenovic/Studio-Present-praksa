@@ -1,0 +1,866 @@
+@import 'vars';
+@import 'mixins';
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgba(217, 217, 217, 1);
+    --secondary-color:#212121;
+}
+.dark-theme{
+    --primary-color:#000106;
+    --secondary-color:rgba(217, 217, 217, 1);
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  
+}
+
+body {
+  background: var(--primary-color);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: --;
+  margin: 0;
+  padding: 0;
+}
+
+.container-main{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+        top: 0px;
+    header{
+        margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+        top: 0px;
+        #modalbox{
+            position: fixed;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width:80%;
+            max-width: 450px;
+            text-align: center;
+            padding:80px 60px;
+            font-size: 18px;
+            font-weight: 500;
+            background-color: burlywood;
+            border-radius: 8px;
+            display: none;
+            z-index: 1;
+            .close-icon{
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 25px;
+                right:25px;
+                cursor: pointer;
+            }
+            button{
+                background:brown;
+                color: wheat;
+                padding:15px;
+                border-radius: 4px;
+                font-size: 20px;
+                font-weight: 500;
+                width: 100%;
+                border:0;
+                outline:0;
+                margin-top: 50px;
+                cursor: pointer;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+            }
+            .cookie{
+                width:100px;
+                margin-bottom: 15px;
+            }
+        }
+        .firstDiv{
+            background-color: rgba(217, 217, 217, 1);
+            display: flex;
+            justify-content: space-between;
+            padding-left: $value*13;
+            padding-top: $value*2;
+            padding-bottom: $value*2;
+            padding-right: $value*13;
+            .dvglogo{
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+                ul{
+                    li{
+                        color: rgba(136, 135, 135, 1);
+                        list-style: none;
+                        display: inline;
+                        font-size: $value*2;
+                        font-weight: 400;
+                        font-family:'Roboto', sans-serif;
+                    }
+                    #english,#magyar{
+                        color: rgba(89, 89, 89, 1);
+                        text-decoration: underline;
+                    }
+                    #icon{
+                        width:30px;
+                        cursor: pointer;
+                    }
+                 }
+            
+        }
+        .list{
+            font-size: $value*2;
+           
+            ul{
+                display: flex;
+                justify-content: space-around;
+                font-family: 'Roboto Condensed', sans-serif;
+                margin-left: $value*13;
+                margin-right: $value*13;
+                li{
+                    color: var(--secondary-color);
+                    border-left: 1px solid var(--secondary-color);
+                    padding-top:$value;
+                    display: inline-block;
+                    padding-left: $value*5;
+                    span{
+                        display: block;
+                        font-size: 12px;
+                        padding-bottom: $value;
+                        color:var(--secondary-color);
+                        ;
+                    }
+                    
+                }
+                .last{
+                    border-right: 1px solid rgba(136, 135, 135, 0.4);
+                    padding-right: $value*7;
+                }   
+                .hamburger{
+                    display:none;
+                }
+            }
+
+        }
+    }
+    .video{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+        top: $value*17;
+        div{
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .sales{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        #veleprodaja{
+            margin-top: $value*9;
+            align-items: center;
+            margin-bottom: $value*9;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .dvg{
+            color: var(--secondary-color);
+            margin-left: auto;
+            margin-right: auto;
+            font-size:$value*5;
+            margin-top: $value*8;
+            margin-left: $value*7;
+            font-family:'Roboto', sans-serif;
+            font-style: normal;
+            margin-bottom: $value*3;
+        }
+        .dvg2{
+            color: var(--secondary-color);
+            font-size: $value*4;
+            font-family: 'Inter';
+            margin-right: $value*21;
+            margin-left: $value*7;
+            margin-bottom: $value*5;
+            margin-top: $value*3;
+
+        }
+        .dvg3{
+            color: var(--secondary-color);
+            margin-right: $value*19;
+            margin-left: $value*7;
+            margin-top: $value*7;
+            font-size: 14px;
+            line-height: 160%;
+            font-family:'Roboto', sans-serif;
+            
+            
+        }
+        .btn1{
+            @include button;
+            margin-top: $value*5;
+            margin-bottom: $value*8;
+            padding:$value*2;
+            margin-left: $value*7;
+        }
+        .line{
+            margin-left: $value*7;
+        }
+        .line2{
+            margin-left: $value*7;
+            max-width: 100%;
+        }
+    }
+    }
+    .distribution{
+        div{
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .pictures{
+        display: flex;
+        margin-top: $value*9;
+        margin-left: $value*13;
+        div{
+            margin-left: $value*2;
+        }
+        p{
+            color: var(--secondary-color);
+            font-size: 24px;
+            font-family:'Roboto', sans-serif;
+        }
+        .line3{
+            margin-bottom: $value*19;
+        }
+        .pics{
+        display: flex;
+        }
+    }
+    .numbers{
+        h1{
+            color: var(--secondary-color);
+            font-size: 42px;
+            font-family:'Roboto', sans-serif;
+            text-align: center;
+        }
+        .company2{
+            color: var(--secondary-color);
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: $value*4;
+        }
+        .line4{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: $value*12;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            img{
+                max-width: 100%;
+            }
+            .first{
+                position: absolute;
+                bottom: $value*15;
+                left: $value*20;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                padding-right: $value*12;
+                padding-top: $value*7;
+                padding-bottom: $value*3;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+            .second{
+                position: absolute;
+                bottom: $value*15;
+                left: $value*67;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                padding-right: $value*16;
+                padding-top: $value*7;
+                padding-bottom: $value*3;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+            .third{
+                position: absolute;
+                bottom: $value*15;
+                left: $value*107;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                padding-right: $value*13;
+                padding-top: $value*7;
+                padding-bottom: $value*3;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+            .fourth{
+                position: absolute;
+                bottom: $value*15;
+                left: $value*144;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 46px;
+                padding-bottom: $value*3;
+                span{
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+          }
+    }
+    .products{
+        background: #F4F4F4;
+        padding-top: $value*12;
+        h1{
+            font-weight: 400;
+            font-size: 28px;
+            margin-bottom: $value*8;
+            text-align: center;
+            font-family: 'Inter';
+            border-bottom: 3px solid rgba(196, 196, 196, 0.4);
+            margin-left: $value*57;
+            margin-right: $value*57;
+            padding-bottom: $value*8;
+        }
+        #paragraph{
+            text-align: center;
+            margin-left: $value*57;
+            margin-right: $value*57;
+            margin-bottom: $value*8;
+            
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .kese{
+                position:absolute;
+                font-size: $value*3;
+                left:45px;
+                bottom: 50px;
+            }
+            .kuhinja{
+                position:absolute;
+                font-size: $value*3;
+                bottom:50px;
+            }
+            .ubrusi{
+                position:absolute;
+                font-size: $value*3;
+                left:100px;
+                bottom:50px;
+            }
+            .kozmetika{
+                position:absolute;
+                font-size: $value*3;
+                bottom:50px;
+            }
+            .kante{
+                position:absolute;
+                font-size: $value*3;
+                bottom:50px;
+            }
+            .maca{
+                position:absolute;
+                font-size: $value*3;
+                bottom:50px;
+            }
+            .kuca{
+                position:absolute;
+                font-size: $value*3;
+                bottom:50px;
+            }
+            .linija5{
+                position: relative;
+                left:-177px;
+                bottom: -115px;
+            }
+            .linija6{
+                position:relative;
+                left:-145px;
+                bottom: -115px;
+            }
+            .linija7{
+                position: relative;
+                left:-120px;
+                bottom: -115px;
+            }
+            .linija8{
+                position:relative;
+                left:-145px;
+                bottom:-115px;
+            }
+            .linija9{
+                position:relative;
+                left:-170px;
+                bottom:-115px;
+            }
+            .linija10{
+                position:relative;
+                left:-120px;
+                bottom:-115px;
+            }
+            .linija11{
+                position:relative;
+                left:-120px;
+                bottom:-115px;
+            }
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit:fill;
+          }
+        
+        }
+    .brands{
+        p{
+            color: var(--secondary-color);
+            font-size: 28px;
+            font-weight: 400px;
+            text-align: center;
+            margin-left: $value*58;
+            margin-right: $value*58;
+            border-bottom: 3px solid rgba(196, 196, 196, 0.4);
+            padding-bottom: $value*6;
+            padding-top: $value*10;
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding-top: $value*5;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .btn2{
+            @include button;
+            padding:$value*2;
+            margin-left: $value*74;
+            margin-top: $value*10;
+            margin-bottom: $value*10;
+        }
+        
+    }
+    .end{
+      background-image: url(../img/pozadina_footer.png);
+      background-size: cover;
+      max-width: 100%;
+      max-height: 100%;
+        .end-child{
+            display: flex;
+            .logoLast{
+                margin-top: $value*10;
+                margin-left: $value*27;
+                border-right: 1px solid rgba(255, 255, 255, 0.26);
+                padding-right: $value*9;
+            }
+            .company{
+                font-size: 28px;
+                color:rgba(255, 255, 255, 1);
+                margin-top: $value*11;
+                margin-left: $value*6;
+                padding-right: $value*22;
+                border-right: 1px solid rgba(255, 255, 255, 0.26);
+                #put{
+                    font-size: 14px;
+                }
+            }
+            .list2{
+                margin-top: $value*10;
+                padding-left: $value*2;
+                line-height: $value*3;
+                border-right: 1px solid rgba(255, 255, 255, 0.26);
+                padding-right: $value*17;
+                ul{
+                    li{
+                        list-style: none;
+                        color:rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+            .contact{
+                color:rgba(255, 255, 255, 1);
+                padding-top: $value*10;
+                padding-left: $value*3;
+                #fb{
+                    padding-top: $value*2;
+                    padding-right:$value*2;
+                }
+                #tw{
+                    padding-right: $value*2;
+                }
+                #yt{
+                    padding-right: $value*2;
+                }
+            }
+        }
+        .end-child2{
+            margin-top: $value*4;
+            color:rgba(255, 255, 255, 0.3);
+            padding-top: $value*3;
+            padding-left: $value*8;
+            display: flex;
+            padding-bottom: $value*3;
+            #private{
+                padding-left: $value*20;
+                color: rgba(255, 255, 255, 0.5);
+
+            }
+            #conditions{
+                padding-left: $value*8;
+                color: rgba(255, 255, 255, 0.5);
+
+            }
+            #powered{
+                padding-left: $value*19;
+                span{
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+        #overlay {
+            width: 95.5%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.33);
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+          }
+    }   
+
+
+    @media screen and (min-width: 1024px) {
+        body{
+            width: 1440px;
+        }
+        .hamburger{
+            display: none;
+        }
+        #lista2{
+            display: none !important;
+        }
+    }
+    
+    @media screen and (min-width: 769px) and (max-width:1023px) {
+        .container-main{
+            width: 1023px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        body{
+            width: 1024px;
+        }
+        .hamburger{
+            display: flex !important;
+        }
+        .listItem{
+            display: none !important;
+        }
+        #lista2{
+            display: none;
+        }
+        #modalbox{
+            max-width: 300px;
+        }
+    }
+    
+    @media screen and (min-width: 481px) and (max-width:768px) {
+        .container-main{
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .line2{
+            max-width: 768px !important;
+            margin-left: 0px !important;
+        }
+        body{
+            width: 768px;
+        }
+        #modal{
+             width: 90%;
+             padding: 60px 40px;
+             font-size: 16px;
+        }
+        .dvgs{
+            max-width: 100%;
+        }
+        .dvg{
+            margin-left: 0px !important;
+        }
+        .dvg2{
+            margin-left: 0px !important;
+            font-size: $value*3 !important;
+            margin-right: 0px !important;
+        }
+        .dvg3{
+            font-size: 8px !important;
+            margin-left: 0px !important;
+            max-width: 100% !important;
+            margin:0px !important;
+        }
+        .hamburger{
+            display: flex !important;
+        }
+        .listItem{
+            display: none !important;
+        }
+        #lista2{
+            display: none;
+        }
+        .logo2{
+            width: 100px;
+        }
+        .end{
+            background-size: cover;
+        }
+        .pictures{
+            margin-left:0px !important;
+        }
+        .pics{
+            display: flex;
+            flex-direction: column;
+            div{
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+        .first,.second,.third,.fourth {
+            font-size: 16px !important;
+            bottom: 50px !important;
+
+            span{
+                font-size: 16px !important;
+            }
+        }
+        .first{
+            left:75px !important;
+        }
+        .second{
+            left:300px !important;
+        }
+        .third{
+            left:450px !important;
+        }
+        .fourth{
+            left:650px !important;
+        }
+        .products{
+            padding-top: 0px !important;
+            h1{
+                margin: 0 auto;
+            }
+            #paragraph{
+                margin: 0 auto;
+            }
+        }
+        .logoLast{
+            margin-left: 0px !important;
+        }
+        .end-child{
+            flex-direction: column;
+        }
+        .end-child2{
+            flex-direction: column;
+            max-width: 91.5%;
+        }
+        .brands{
+            p{
+                font-size: 14px !important;
+                margin:auto;
+            }
+            .btn2{
+                margin-left: 270px !important;
+            }
+        }
+
+        #modalbox{
+            max-width: 150px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .container-main{
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .line2{
+            max-width: 320px !important;
+            margin-left: 0px !important;
+        }
+        body{
+            width: 320px !important;
+        }
+        #modal{
+             width: 100%;
+             padding: 40px 20px;
+             font-size: 14px;
+        }
+        .dvgs{
+            max-width: 100%;
+        }
+        .dvg{
+            margin-left: 0px !important;
+        }
+        .dvg2{
+            margin-left: 0px !important;
+            font-size: $value*3 !important;
+            margin-right: 0px !important;
+        }
+        .dvg3{
+            font-size: 8px !important;
+            margin-left: 0px !important;
+            max-width: 100% !important;
+            margin:0px !important;
+        }
+        .hamburger{
+            display: flex !important;
+        }
+        .listItem{
+            display: none !important;
+        }
+        #lista2{
+            display: none;
+        }
+        .logo2{
+            width: 100px;
+        }
+        .end{
+            background-size: cover;
+        }
+        .pictures{
+            margin-left:0px !important;
+        }
+        .pics{
+            display: flex;
+            flex-direction: column;
+            div{
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+        .first,.second,.third,.fourth {
+            font-size: 8px !important;
+            bottom: 0px !important;
+            span{
+                font-size: 8px !important;
+            }
+        }
+        .first{
+            left:0px !important;
+        }
+        .second{
+            left:100px !important;
+        }
+        .third{
+            left:150px !important;
+        }
+        .fourth{
+            left:235px !important;
+        }
+        .products{
+            padding-top: 0px !important;
+            h1{
+                margin: 0 auto 50px auto;
+            }
+            #paragraph{
+                margin: 50px auto;
+            }
+        }
+        .logoLast{
+            margin-left: 0px !important;
+        }
+        .end-child{
+            flex-direction: column;
+        }
+        .end-child2{
+            flex-direction: column;
+            max-width: 85%;
+        }
+        .brands{
+            p{
+                font-size: 14px !important;
+                margin:auto;
+            }
+            .btn2{
+                margin-left: 0px !important;
+            }
+        }
+        #modalbox{
+            max-width: 150px !important;
+        }
+    }
+
+
