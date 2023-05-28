@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 :root {
@@ -26,6 +27,12 @@ body {
   color: --;
   margin: 0;
   padding: 0;
+}
+
+.container-main {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -212,6 +219,7 @@ body .sales .line {
 }
 body .sales .line2 {
   margin-left: 56px;
+  max-width: 100%;
 }
 
 .distribution div img {
@@ -579,6 +587,11 @@ body .sales .line2 {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+  .container-main {
+    width: 1023px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   body {
     width: 1024px;
   }
@@ -591,10 +604,27 @@ body .sales .line2 {
   #lista2 {
     display: none;
   }
+  #modalbox {
+    max-width: 300px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .container-main {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .line2 {
+    max-width: 768px !important;
+    margin-left: 0px !important;
+  }
   body {
     width: 768px;
+  }
+  #modal {
+    width: 90%;
+    padding: 60px 40px;
+    font-size: 16px;
   }
   .dvgs {
     max-width: 100%;
@@ -662,10 +692,10 @@ body .sales .line2 {
     padding-top: 0px !important;
   }
   .products h1 {
-    margin-left: 350px !important;
+    margin: 0 auto;
   }
   .products #paragraph {
-    margin-left: 350px !important;
+    margin: 0 auto;
   }
   .logoLast {
     margin-left: 0px !important;
@@ -675,18 +705,36 @@ body .sales .line2 {
   }
   .end-child2 {
     flex-direction: column;
+    max-width: 91.5%;
   }
   .brands p {
     font-size: 14px !important;
-    margin-left: 350px !important;
+    margin: auto;
   }
   .brands .btn2 {
     margin-left: 270px !important;
   }
+  #modalbox {
+    max-width: 150px;
+  }
 }
 @media screen and (max-width: 480px) {
+  .container-main {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .line2 {
+    max-width: 320px !important;
+    margin-left: 0px !important;
+  }
   body {
     width: 320px !important;
+  }
+  #modal {
+    width: 100%;
+    padding: 40px 20px;
+    font-size: 14px;
   }
   .dvgs {
     max-width: 100%;
@@ -754,10 +802,10 @@ body .sales .line2 {
     padding-top: 0px !important;
   }
   .products h1 {
-    margin-left: 0px !important;
+    margin: 0 auto 50px auto;
   }
   .products #paragraph {
-    margin-left: 0px !important;
+    margin: 50px auto;
   }
   .logoLast {
     margin-left: 0px !important;
@@ -767,12 +815,16 @@ body .sales .line2 {
   }
   .end-child2 {
     flex-direction: column;
+    max-width: 85%;
   }
   .brands p {
     font-size: 14px !important;
-    margin-left: 0px !important;
+    margin: auto;
   }
   .brands .btn2 {
     margin-left: 0px !important;
+  }
+  #modalbox {
+    max-width: 150px !important;
   }
 }/*# sourceMappingURL=styles.css.map */
