@@ -61,7 +61,7 @@ body header #modalbox {
   background-color: burlywood;
   border-radius: 8px;
   display: none;
-  z-index: 1;
+  z-index: 3;
 }
 body header #modalbox .close-icon {
   width: 25px;
@@ -662,6 +662,7 @@ body .sales .line2 {
     margin-left: 0px !important;
   }
   .pics {
+    margin: 0 auto !important;
     display: flex;
     flex-direction: column;
   }
@@ -715,7 +716,7 @@ body .sales .line2 {
     margin-left: 270px !important;
   }
   #modalbox {
-    max-width: 150px;
+    max-width: 250px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -740,18 +741,16 @@ body .sales .line2 {
     max-width: 100%;
   }
   .dvg {
-    margin-left: 0px !important;
+    font-size: 30px !important;
   }
   .dvg2 {
-    margin-left: 0px !important;
     font-size: 24px !important;
-    margin-right: 0px !important;
+    margin-right: 30px !important;
   }
   .dvg3 {
     font-size: 8px !important;
-    margin-left: 0px !important;
     max-width: 100% !important;
-    margin: 0px !important;
+    margin: 30px !important;
   }
   .hamburger {
     display: flex !important;
@@ -772,6 +771,7 @@ body .sales .line2 {
     margin-left: 0px !important;
   }
   .pics {
+    margin: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -825,6 +825,6 @@ body .sales .line2 {
     margin-left: 0px !important;
   }
   #modalbox {
-    max-width: 150px !important;
+    max-width: 250px !important;
   }
 }/*# sourceMappingURL=styles.css.map */

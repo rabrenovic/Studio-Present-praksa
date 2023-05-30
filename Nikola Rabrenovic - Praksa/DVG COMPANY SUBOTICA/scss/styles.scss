@@ -65,7 +65,7 @@ body{
             background-color: burlywood;
             border-radius: 8px;
             display: none;
-            z-index: 1;
+            z-index: 3;
             .close-icon{
                 width: 25px;
                 height: 25px;
@@ -629,6 +629,7 @@ body{
         #modalbox{
             max-width: 300px;
         }
+        
     }
     
     @media screen and (min-width: 481px) and (max-width:768px) {
@@ -685,6 +686,7 @@ body{
             margin-left:0px !important;
         }
         .pics{
+            margin: 0 auto !important;
             display: flex;
             flex-direction: column;
             div{
@@ -744,7 +746,7 @@ body{
         }
 
         #modalbox{
-            max-width: 150px;
+            max-width: 250px;
         }
     }
     
@@ -770,18 +772,16 @@ body{
             max-width: 100%;
         }
         .dvg{
-            margin-left: 0px !important;
+          font-size: 30px !important;
         }
         .dvg2{
-            margin-left: 0px !important;
             font-size: $value*3 !important;
-            margin-right: 0px !important;
+            margin-right: 30px !important;
         }
         .dvg3{
             font-size: 8px !important;
-            margin-left: 0px !important;
             max-width: 100% !important;
-            margin:0px !important;
+            margin:30px !important;
         }
         .hamburger{
             display: flex !important;
@@ -802,6 +802,7 @@ body{
             margin-left:0px !important;
         }
         .pics{
+            margin: 30px;
             display: flex;
             flex-direction: column;
             div{
@@ -859,7 +860,7 @@ body{
             }
         }
         #modalbox{
-            max-width: 150px !important;
+            max-width: 250px !important;
         }
     }
 
